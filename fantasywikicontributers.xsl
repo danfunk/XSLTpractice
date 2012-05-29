@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		              xmlns:mw="http://www.mediawiki.org/xml/export-0.6/">
 
 <xsl:output indent="no"/>
 <xsl:template match="/">
@@ -14,7 +15,7 @@
   </html>
 </xsl:template>
 
-<xsl:template match="page">
+<xsl:template match="mw:page">
   word
   <br/>
   <xsl:value-of select="title"> </xsl:value-of>
